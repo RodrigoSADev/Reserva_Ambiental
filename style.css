@@ -134,8 +134,10 @@ body {
   border-radius: 10px;
   transition: 0.3s;
 }
-.gallery-animals img:hover {
-  flex: 4;
+@media (min-width: 768px) {
+  .gallery-animals img:hover {
+    flex: 4;
+  }
 }
 .slide.active {
   flex: 4;
@@ -517,6 +519,7 @@ body {
     margin-top: 0px;
   }
   .slideshow {
-    margin-left: 10px;
+    margin-left: 0;
+    padding-left: 10px;
   }
 }

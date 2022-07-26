@@ -10,12 +10,7 @@ export default function initSlide() {
       slideIndex = 1;
     }
     imagens[slideIndex - 1].classList.add("active");
-    setTimeout(tradeImage, 1600);
-    imagens.forEach((img) => {
-      img.addEventListener("touchstart", (event) => {
-        event.preventDefault();
-      });
-    });
+    setTimeout(tradeImage, 2000);
   }
   tradeImage();
 }
